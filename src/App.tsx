@@ -1,6 +1,7 @@
 import ResponsiveLayout from "./components/ResponsiveLayout";
 import { Grid, GridItem, Image, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <div>
         <Grid
           templateAreas={{
-            base: `"nav main"`,
+            base: `"nav" "main"`,
             lg: `"nav nav" "aside main" `,
           }}
         >
@@ -24,7 +25,7 @@ function App() {
           </Show>
 
           <GridItem pl="2" bg="green.300" area={"main"}>
-            Main
+            <GameGrid />
           </GridItem>
         </Grid>
       </div>
