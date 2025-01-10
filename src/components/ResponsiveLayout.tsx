@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, GridItem, Image, Show } from "@chakra-ui/react";
 import NavBar from "./NavBar";
+import GenreListAside from "./GenreListAside";
 
 export default function ResponsiveLayout() {
   return (
@@ -15,8 +16,8 @@ export default function ResponsiveLayout() {
           <NavBar />
         </GridItem>
         <Show above="lg">
-          <GridItem pl="2" bg="pink.300" area={"aside"}>
-            aside
+          <GridItem pl="2" bg="red.300" area={"aside"}>
+            <GenreListAside />
           </GridItem>
         </Show>
 

@@ -2,6 +2,7 @@ import ResponsiveLayout from "./components/ResponsiveLayout";
 import { Grid, GridItem, Image, Show } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
+import GenreListAside from "./components/GenreListAside";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           </GridItem>
           <Show above="lg">
             <GridItem pl="2" bg="pink.300" area={"aside"}>
-              aside
+              <GenreListAside />
             </GridItem>
           </Show>
 
