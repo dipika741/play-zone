@@ -26,6 +26,7 @@ export default function ResponsiveLayout() {
         <Show above="lg">
           <GridItem pl="2" bg="pink.300" area={"aside"} paddingX={5}>
             <GenreListAside
+              selectedGenre={selectedGenre}
               onSelectGenre={(genre) => setSelectedGenre(genre)}
             />
           </GridItem>
