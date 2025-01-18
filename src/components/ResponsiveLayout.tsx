@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import GenreListAside from "./GenreListAside";
 import GameGrid from "./GameGrid";
 import { Genre } from "../hooks/useGenres";
+import PlatformelectorDropdown from "./PlatformelectorDropdown";
 
 export default function ResponsiveLayout() {
   const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
@@ -32,7 +33,8 @@ export default function ResponsiveLayout() {
           </GridItem>
         </Show>
 
-        <GridItem pl="2" bg="green.300" area={"main"}>
+        <GridItem pl="2" bg="green.300" area="main">
+          <PlatformelectorDropdown />
           <GameGrid selectedGenre={selectedGenre} />
         </GridItem>
       </Grid>
