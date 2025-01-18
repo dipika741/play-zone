@@ -5,6 +5,7 @@ import usePlatforms from "../hooks/usePlatform";
 
 export default function PlatformelectorDropdown() {
   const { data, error } = usePlatforms();
+  if (error) return null;
   return (
     <>
       <Menu>
